@@ -2,10 +2,6 @@
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f34a4"]
 bg_color = Color(0, 0, 0, 1)
-corner_radius_top_left = 30
-corner_radius_top_right = 30
-corner_radius_bottom_right = 30
-corner_radius_bottom_left = 30
 
 [resource]
 module_wrapper/base_type = &"Panel"
