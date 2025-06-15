@@ -4,6 +4,10 @@ using Godot;
 using Windows.Media.Control;
 using WindowsMediaController;
 
+// TODO: add functionality to detect if anything is playing
+// TODO: add functionality to update the play state of the UI
+// TODO: add ability to contorl playback
+
 public partial class Main : Control
 {
   MediaManager _mediaManager;
