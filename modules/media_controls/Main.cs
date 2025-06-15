@@ -4,7 +4,7 @@ using Godot;
 using Windows.Media.Control;
 using WindowsMediaController;
 
-public partial class Main : Panel
+public partial class Main : Control
 {
   MediaManager _mediaManager;
   TextureRect _albumArt;

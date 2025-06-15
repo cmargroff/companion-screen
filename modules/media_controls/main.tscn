@@ -1,15 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://s0ja5vaidmi1"]
+[gd_scene load_steps=6 format=3 uid="uid://s0ja5vaidmi1"]
 
-[ext_resource type="Script" uid="uid://b5mje3f0rlw85" path="res://Main.cs" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://b5mje3f0rlw85" path="res://modules/media_controls/Main.cs" id="1_ig7tw"]
 [ext_resource type="Texture2D" uid="uid://bccuucis08mt4" path="res://icon.svg" id="2_0xm2m"]
-[ext_resource type="Shader" uid="uid://d115ruuhmvp6h" path="res://shaders/gaussian_blur.gdshader" id="2_h2yge"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h2yge"]
-bg_color = Color(0, 0, 0, 1)
-corner_radius_top_left = 30
-corner_radius_top_right = 30
-corner_radius_bottom_right = 30
-corner_radius_bottom_left = 30
+[ext_resource type="Shader" uid="uid://d115ruuhmvp6h" path="res://modules/media_controls/shaders/gaussian_blur.gdshader" id="2_h2yge"]
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_h2yge"]
 viewport_path = NodePath("SubViewport")
@@ -23,16 +16,17 @@ shader_parameter/G = 0.0
 shader_parameter/B = 0.0
 shader_parameter/blur_strength = 10.0
 
-[node name="Main" type="Panel"]
+[node name="Main" type="Control"]
 clip_children = 2
 clip_contents = true
+layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_styles/panel = SubResource("StyleBoxFlat_h2yge")
 script = ExtResource("1_ig7tw")
 
 [node name="ColorRect" type="ColorRect" parent="."]
